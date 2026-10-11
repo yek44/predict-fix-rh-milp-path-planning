@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "predictfix"
+version = "1.0.0"
+description = "Predict-and-fix acceleration of receding-horizon MILP path planning"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Yunus Emre Kara" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.0",
+    "pyscipopt>=5.0",
+]
+
+[tool.setuptools]
+packages = ["predictfix"]
