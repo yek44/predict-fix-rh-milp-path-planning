@@ -13,6 +13,14 @@ fix the predictions it is most confident about, and let SCIP solve what is
 left. On held-out problems this cuts the mean planning time by 79%, and 87 of
 100 plans keep the optimal objective of the full MILP.
 
+<p align="center">
+  <img src="figures/scenarios.png" width="620" alt="Example instances">
+</p>
+
+*(a) A single-vehicle instance solved to optimality: 520 four-way side choices, one per
+obstacle and step. (b) A three-vehicle crossing from the transfer study. Open circles
+mark starts, stars mark goals.*
+
 ## Method
 
 With one vehicle, 13 obstacles and a 4 s horizon at 0.1 s, the MILP has 520
@@ -148,6 +156,7 @@ predictfix/          the method
 scripts/             one script per experiment, data collection, training
 checkpoints/         the trained SideGRU (1.1 MB)
 results/             per-instance results behind every table
+figures/             Fig. 1 of the paper
 ```
 
 ## Citation
