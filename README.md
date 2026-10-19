@@ -1,5 +1,15 @@
 # Learning to Accelerate Receding-Horizon MILP Path Planning
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="figures/pipeline-dark.svg">
+    <img src="figures/pipeline-light.svg" width="860" alt="Predict-and-fix pipeline: pose the MILP, predict the obstacle sides with SideGRU, fix the confident ones, let SCIP solve the rest, apply the first 0.1 s and replan">
+  </picture>
+</p>
+
+*The predict-and-fix loop. The side grid and the trajectory come from one test problem solved to
+optimality; which groups are left free is illustrative.*
+
 Code, trained model and results for the paper *Learning to Accelerate
 Receding-Horizon MILP Path Planning* by Yunus Emre Kara and Murad Abu-Khalaf,
 submitted to the 2027 European Control Conference.
@@ -156,7 +166,7 @@ predictfix/          the method
 scripts/             one script per experiment, data collection, training
 checkpoints/         the trained SideGRU (1.1 MB)
 results/             per-instance results behind every table
-figures/             Fig. 1 of the paper
+figures/             Fig. 1 of the paper and the animated pipeline figure
 ```
 
 ## Citation
