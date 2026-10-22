@@ -14,6 +14,8 @@ Code, trained model and results for the paper *Learning to Accelerate
 Receding-Horizon MILP Path Planning* by Yunus Emre Kara and Murad Abu-Khalaf,
 submitted to the 2027 European Control Conference.
 
+**Paper:** [PDF](paper/kara2027_learning_to_accelerate_rh_milp.pdf) (submitted version, under review).
+
 A receding-horizon planner in the style of Schouwenaars et al. (ECC 2001)
 solves a mixed-integer linear program at every control step. Most of the
 solve time goes into the binary variables that decide on which side of each
@@ -167,6 +169,7 @@ scripts/             one script per experiment, data collection, training
 checkpoints/         the trained SideGRU (1.1 MB)
 results/             per-instance results behind every table
 figures/             Fig. 1 of the paper and the animated pipeline figure
+paper/               the submitted paper (PDF)
 ```
 
 ## Citation
